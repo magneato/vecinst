@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<AllProjectProperties>
+	<ProjectProperties>
+		<Class>Project</Class>
+		<Name>VecNIST</Name>
+		<ProjectName>VecNIST</ProjectName>
+		<DirectoryName></DirectoryName>
+		<Path>projects</Path>
+		<MainFile>vecnist.asm</MainFile>
+		<Description>Draw a digit (joystick or light pen) and a network trained on MNIST reads it</Description>
+		<Version>1.0</Version>
+		<Author>Robert Sitton</Author>
+		<Bankswitching>none</Bankswitching>
+		<createBankswitchCode>false</createBankswitchCode>
+		<createGameLoopCode>false</createGameLoopCode>
+		<NumberOfBanks>1</NumberOfBanks>
+		<BankMainFiless>
+			<BankMainFiles>vecnist.asm</BankMainFiles>
+		</BankMainFiless>
+		<Extras>0</Extras>
+		<ProjectPreScriptClass></ProjectPreScriptClass>
+		<ProjectPreScriptName></ProjectPreScriptName>
+		<ProjectPostScriptClass></ProjectPostScriptClass>
+		<ProjectPostScriptName></ProjectPostScriptName>
+		<BankDefiness>
+			<BankDefines></BankDefines>
+		</BankDefiness>
+		<WheelName></WheelName>
+	</ProjectProperties>
+</AllProjectProperties>

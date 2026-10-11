@@ -1,0 +1,14 @@
+# --- MNIST (Yann LeCun, Corinna Cortes, Christopher J.C. Burges): fetched by get_mnist.sh, never committed
+data/
+# --- generated
+build/
+screenshots/_*
+__pycache__/
+*.pyc
+# --- written beside the source by Vide's assembler (the IDE, or tools/build.sh's check)
+/vecnist.bin
+/vecnist.cnt
+/vecnist.lst
+tools/lwtools/
+# --- notes for the coding assistant: kept local, not published
+CLAUDE.md

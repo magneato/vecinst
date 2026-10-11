@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-art.py - the pictures for the web page and the repository, made from real frames of the demo (vecnist.mp4).
+art.py - the pictures for the web page and the repository, made from real frames of the demo (vecinst.mp4).
 
   overlay/vecnist.png     a Vectrex overlay (the translucent coloured film every Vectrex game came with): title band,
                           tinted play areas, the four buttons' jobs along the bottom.  768 x 1024 with alpha, in the
@@ -9,7 +9,7 @@ art.py - the pictures for the web page and the repository, made from real frames
                           lines do under coloured plastic), for N = the digits of the demo
   social-preview.png      1280 x 640: a 1983 computer advertisement, by way of a war-room terminal
 
-   python3 tools/art.py              (needs build/answer_*.png: ./run.sh --video vecnist.mp4 makes them)
+   python3 tools/art.py              (needs build/answer_*.png: ./run.sh --video vecinst.mp4 makes them)
 """
 import glob, os, sys
 import numpy as np
@@ -162,7 +162,7 @@ def social(screen):
 def main():
     frames = sorted(glob.glob(os.path.join(ROOT, "build", "answer_*.png")), key=lambda p: float(p.split("_")[-1][:-4]))
     if not frames:
-        sys.exit("no build/answer_*.png: run ./run.sh --video vecnist.mp4 first")
+        sys.exit("no build/answer_*.png: run ./run.sh --video vecinst.mp4 first")
     tint, art = make_overlay()
     os.makedirs(os.path.join(ROOT, "overlay"), exist_ok=True)
     os.makedirs(os.path.join(ROOT, "art"), exist_ok=True)

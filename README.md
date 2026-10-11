@@ -7,8 +7,8 @@ integers.
 ![a 7, drawn with the joystick and read as a 7](screenshots/drawn_7.png)
 
 ## Play it
-**Web page, ROM and demo:** <https://magneato.github.io/vecnist/>. The ROM is [`rom/vecnist.bin`](rom/vecnist.bin) and the
-demo is [`vecnist.mp4`](vecnist.mp4).
+**Web page, ROM and demo:** <https://magneato.github.io/vecinst/>. The ROM is [`rom/vecnist.bin`](rom/vecnist.bin) and the
+demo is [`vecinst.mp4`](vecinst.mp4).
 ```
 ./setup.sh      # once: lwasm, MAME, Python + numpy + Pillow, ffmpeg; checks for the Vectrex BIOS
 ./build.sh      # build/vecnist.bin (and rom/vecnist.bin); checked against Vide's own assembler if Vide is there
@@ -103,3 +103,6 @@ test/              harness.lua (MAME: scripted stick, buttons, light pen, pokes)
 MNIST: Yann LeCun, Corinna Cortes and Christopher J.C. Burges (not included; `get_mnist.sh` fetches it). The
 Vectrex BIOS addresses follow the BIOS listing and Vide's `VECTREX.I`. Vide is Malban's. MAME's Vectrex driver
 was used for testing.
+
+## Licence
+BSD 3-Clause, (c) 2026 Robert Sitton: see [LICENSE](LICENSE). MNIST, the Vectrex BIOS and MAME belong to their owners.

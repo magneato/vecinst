@@ -7,7 +7,7 @@
 <meta name="description" content="A neural network that reads handwritten digits on a stock 1982 Vectrex: a 6809 at 1.5 MHz, 1 KB of RAM, no frame buffer, no add-on hardware. Download the ROM or play it in MAME.">
 <meta property="og:title" content="VecNIST — it reads your handwriting. On a 1982 Vectrex.">
 <meta property="og:description" content="A 6809 at 1.5 MHz. 1 KB of RAM. No frame buffer. No PiTrex, no VecFever, no Vectrex32. 93.2% on MNIST.">
-<meta property="og:image" content="https://magneato.github.io/vecnist/social-preview.png">
+<meta property="og:image" content="https://magneato.github.io/vecinst/social-preview.png">
 <meta property="og:image:width" content="1280">
 <meta property="og:image:height" content="640">
 <meta name="twitter:card" content="summary_large_image">
@@ -189,7 +189,7 @@
       <p class="note">The colours come from the overlay: Vectrex games came with a printed plastic film over the screen,
       and VecNIST has one too (overlay/vecnist.png).</p>
     </div>
-    <video src="vecnist.mp4" controls muted loop playsinline poster="art/screen_7.png" width="768" height="1024"></video>
+    <video src="vecinst.mp4" controls muted loop playsinline poster="art/screen_7.png" width="768" height="1024"></video>
   </div>
   <div class="gallery">
     <img src="art/screen_1.png" alt="A 1, read as 1" loading="lazy" width="768" height="1024">
@@ -234,11 +234,11 @@
   </ol>
 
   <h2>Build it yourself</h2>
-<pre>git clone https://github.com/magneato/vecnist
-cd vecnist
+<pre>git clone https://github.com/magneato/vecinst
+cd vecinst
 ./setup.sh      # lwasm, MAME, Python + numpy (and checks for the Vectrex BIOS)
 ./build.sh      # build/vecnist.bin, checked against Vide's own assembler if Vide is installed
-./run.sh        # play it in MAME   (./run.sh --video vecnist.mp4 records the demo)</pre>
+./run.sh        # play it in MAME   (./run.sh --video vecinst.mp4 records the demo)</pre>
   <p>The folder is also a <a href="http://vide.malban.de/">Vide</a> project (<code>VecNISTProjectProperty.xml</code>). Link
   it into Vide&rsquo;s <code>projects</code> folder and assemble it there; the bytes are the same as lwasm&rsquo;s. To retrain,
   run <code>./get_mnist.sh</code> and then <code>python3 train/vecnist.py train</code> (about 40 seconds on a PC).</p>
@@ -246,8 +246,8 @@ cd vecnist
 
 <footer>
   <div class="wrap">
-    <span>Code: Clear BSD licence, &copy; 2026 Neural Splines LLC</span>
-    <a href="https://github.com/magneato/vecnist">github.com/magneato/vecnist</a>
+    <span>Code: BSD 3-Clause licence, &copy; 2026 Robert Sitton</span>
+    <a href="https://github.com/magneato/vecinst">github.com/magneato/vecinst</a>
     <span>MNIST: Yann LeCun, Corinna Cortes, Christopher J.C. Burges (not included)</span>
     <span>Vectrex is a trademark of its owners. This is an unofficial homebrew cartridge.</span>
   </div>

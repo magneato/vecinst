@@ -2,7 +2,7 @@
 all:
 	./build.sh
 video: all
-	./run.sh --no-build --video vecnist.mp4
+	./run.sh --no-build --video vecinst.mp4
 train:
 	./get_mnist.sh
 	python3 train/vecnist.py train
